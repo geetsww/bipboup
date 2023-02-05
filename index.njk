@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    home
-</body>
-</html>
+---
+title: Bipboup.dev | Développement web, UX/UI design, ...
+layout: layouts/main.njk
+---
+
+{%- from "components/article-link/article-link.njk" import article -%}
+
+
+{# <h3>Articles récents:</h3>
+
+{% for post in collections.post%}
+    {{article(title=post.data.title, slug=post.fileSlug)}}
+{%endfor%} #}
