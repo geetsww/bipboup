@@ -5,12 +5,9 @@ layout: layouts/main.njk
 
 {%- from "components/article-link/article-link.njk" import article -%}
 
-
-
-{{ collections.all | log }}
-
  <h3>Articles récents:</h3>
 
+  {{categories | log}}
 {% for post in posts%}
     {{post.slug}}
     {{article(title=post.title, slug=post.slug)}}

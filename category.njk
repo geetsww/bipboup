@@ -1,0 +1,12 @@
+---
+layout: layouts/main.njk
+pagination:
+    data: categories
+    size: 1
+    alias: category
+permalink: "categories/{{ category.slug }}/"
+eleventyComputed:
+    title: "{{category.title}}"
+---
+
+<a href="/">Retour à l'accueil</a>

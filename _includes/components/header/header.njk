@@ -1,4 +1,27 @@
-<header class="header">
-        <h1>bipboup.dev</h1>
-        <h2>Développement web, UX/UI Design, entreprenariat, ...</h2>
+<header class="header"> 
+  <a class="header__title" href="/">
+      Bipboup.dev
+  </a>
+  <nav class="header__nav">
+    <ul>
+      <li>
+        <a class="h6 {% if page.url == "/" %} active {% endif %}" href="/">Accueil</a>
+      </li>
+      <li class="header__dropdown">
+        <button class="h6">Catégories</button>
+        {{categories | log}}
+        <ul>
+          {% for category in categories %}
+          <li>
+            <a class="h6" href="/categories/{{category.slug}}/">{{category.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li>
+        <a class="h6 {% if page.url == "/a-propos/" %} active {% endif %}" href="/a-propos/">A propos</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="header__toggle-nav">Menu</button>
 </header>

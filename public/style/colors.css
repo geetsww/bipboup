@@ -1,7 +1,3 @@
 :root{
-    --marigold: #F0A202;
-    --tangerine: #F18805;
-    --flame: #D95D39;
-    --oxford-blue: #0E1428;
-    --morning-blue: #7B9E89;
+    --grandient-one: var(90deg, #eee, #333)
 }
