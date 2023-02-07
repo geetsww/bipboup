@@ -1,0 +1,15 @@
+---
+layout: layouts/main.njk
+pagination:
+    data: posts
+    size: 1
+    alias: post
+permalink: "articles/{{ post.slug }}/"
+eleventyComputed:
+    title: "{{post.title}}"
+---
+
+<h1>{{post.title}}</h1>
+{{post.content | markdown | safe}}
+
+<a href="/">Retour à l'accueil</a>
