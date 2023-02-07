@@ -1,4 +1,7 @@
+
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 require('dotenv').config()
+
 module.exports = async () =>{
     const req = await fetch(process.env.API + '/items/posts/', {
         method:'GET',
