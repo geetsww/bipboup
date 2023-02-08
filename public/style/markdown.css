@@ -39,11 +39,6 @@
   font-size: 1.25rem;
   font-weight: 500;
 }
-.markdown pre{
-  background: var(--gray);
-  padding: 1rem;
-  width: 100%;
-}
 
 .markdown .token.operator{
   background: none;
