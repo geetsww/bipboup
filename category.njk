@@ -6,7 +6,8 @@ pagination:
     alias: category
 permalink: "categories/{{ category.slug }}/"
 eleventyComputed:
-    title: "{{category.title}}"
+    title: "{{category.name}}"
 ---
 
+{{category.name}}
 <a href="/">Retour à l'accueil</a>
