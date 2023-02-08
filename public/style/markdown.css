@@ -1,12 +1,25 @@
 @import "./prism.css";
-.markdown > * + *{
+.markdown h1, .markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{
   margin-top: 40px;
+}
+.markdown ul{
+  display: block;
+  list-style: square;
+  padding-left: 2ch;
+  margin: 40px 0;
+}
+.markdown em{
+  font-style: italic;
+}
+.markdown strong{
+  font-weight: 600;
 }
 .markdown p{
     font-size: 1rem;
     line-height: 140%;
     font-family: "Open Sans";
     font-weight: 400;
+    margin-top: 12px;
 }
 .markdown h1{
     font-size: 3rem;
