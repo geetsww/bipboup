@@ -5,10 +5,10 @@ layout: layouts/main.njk
 
 {%- from "components/article-link/article-link.njk" import article -%}
 
- <h3>Articles récents:</h3>
+{% include "components/spotlight/spotlight.njk" %}
 
-  {{categories | log}}
-{% for post in posts%}
+
+{# {% for post in posts%}
     {{post.slug}}
     {{article(title=post.title, slug=post.slug)}}
-{%endfor%} 
+{%endfor%}  #}

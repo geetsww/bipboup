@@ -9,11 +9,10 @@
       </li>
       <li class="header__dropdown">
         <button class="h6">Catégories</button>
-        {{categories | log}}
         <ul>
           {% for category in categories %}
           <li>
-            <a class="h6 {% if page.url == "/categories/{{category.slug}}/" %} active {% endif %}" href="/categories/{{category.slug}}/">{{category.name}}</a>
+            <a class="h6{% if page.url == "/categories/" + category.slug + "/" %} active {% endif %}" href="/categories/{{category.slug}}/">{{category.name}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -25,3 +24,4 @@
   </nav>
   <button class="header__toggle-nav">Menu</button>
 </header>
+

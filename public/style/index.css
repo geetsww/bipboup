@@ -6,4 +6,5 @@
 
 /* Components */
 
-@import "../../_includes/components/header/header.css"
+@import "../../_includes/components/header/header.css";
+@import "../../_includes/components/spotlight/spotlight.css";

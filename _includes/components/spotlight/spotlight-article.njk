@@ -1,0 +1,15 @@
+{% macro spotlightArticle(article) %}
+<article class="spotlight__article">
+    <figure>
+      <img src="{{article.thumbnail | getImageUrl}}" alt="">
+    </figure>
+    <div class="spotlight__title">
+      <h2 class="h4">{{article.title}}</h2>
+      <time class="description semibold">{{article.date_created | parseDateToFrench}}</time>
+      <span class="spotlight__category description semibold">{{article.category.name}}</span>
+    </div>
+    <a class="spotlight__link" href="/articles/{{article.slug}}/">
+      <span class="sr-only">Lire l'article "{{article.title}}"</span>
+    </a>
+  </article>
+  {%endmacro%}

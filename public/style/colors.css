@@ -1,3 +1,6 @@
 :root{
-    --grandient-one: var(90deg, #eee, #333)
+    --gray-light: #F2F2F2;
+    --gray: #C8C8C8;
+    --gray-dark: #525252;
+    --border: #FA97A1;
 }

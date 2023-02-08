@@ -4,6 +4,7 @@
     align-items: center;
     gap:60px;
     position: relative;
+    margin-bottom: 70px;
 }
 .header__title{
   background: -webkit-linear-gradient(360deg, #9780E5, #E666CC);
@@ -89,6 +90,8 @@
 @media (max-width: 800px){
   .header{
     padding: 1rem 0;
+
+    margin-bottom: 1rem;
   }
   .header__nav.display{
     transform: none;
