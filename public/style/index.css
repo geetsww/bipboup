@@ -3,8 +3,11 @@
 @import "./fonts.css";
 @import "./colors.css";
 @import "./global.css";
+@import "./categories.css";
 
 /* Components */
 
 @import "../../_includes/components/header/header.css";
 @import "../../_includes/components/spotlight/spotlight.css";
+@import "../../_includes/components/article-link/article-link.css";
+@import "../../_includes/components/footer/footer.css";

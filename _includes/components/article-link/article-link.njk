@@ -1,6 +1,16 @@
-{% macro article(title, slug) %}
-    <div>
-        <h4>{{title}} </h4>
-        <a href="/articles/{{slug}}/">Lire l'article</a>
-    </div>
+{% macro article(article) %}
+    <article class="article-link">
+      <figure class="article-link__thumbnail">
+        <img src="{{article.thumbnail | getImageUrl}}" alt="">
+      </figure>
+      <div class="article-link__data">
+        <span class="article-link__category description semibold" data-category="{{article.category.id}}">{{article.category.name}}</span>
+        <h2 class="h6">{{article.title}} </h2>
+        <time class="article-link__date description semibold">{{article.date_created | parseDateToFrench}}</time>
+        <p class="text">{{article.description}}</p>
+        <a class="article-link__link" href="/articles/{{article.slug}}/">
+          <span class="sr-only">Lire l'article</span>
+        </a>
+      </div>
+    </article>
 {%endmacro%}

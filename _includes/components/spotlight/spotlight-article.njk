@@ -6,7 +6,7 @@
     <div class="spotlight__title">
       <h2 class="h4">{{article.title}}</h2>
       <time class="description semibold">{{article.date_created | parseDateToFrench}}</time>
-      <span class="spotlight__category description semibold">{{article.category.name}}</span>
+      <span data-category="{{article.category.id}}" class="spotlight__category description semibold">{{article.category.name}}</span>
     </div>
     <a class="spotlight__link" href="/articles/{{article.slug}}/">
       <span class="sr-only">Lire l'article "{{article.title}}"</span>
