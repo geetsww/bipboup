@@ -4,6 +4,11 @@
 @import "./colors.css";
 @import "./global.css";
 @import "./categories.css";
+@import "./markdown.css";
+
+/* Pages */
+
+@import "./pages/article.css";
 
 /* Components */
 

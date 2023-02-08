@@ -9,5 +9,12 @@ eleventyComputed:
     title: "{{category.name}}"
 ---
 
-{{category.name}}
-<a href="/">Retour à l'accueil</a>
+{%- from "components/article-link/article-link.njk" import article -%}
+
+<h1 style="text-align:center;" class="gradient-text h1">{{category.name}}</h1>
+
+{% for post in posts%}
+    {% if post.category.id == category.id %}
+      {{article(post)}}
+    {%endif%}
+{%endfor%} 

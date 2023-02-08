@@ -9,7 +9,17 @@ eleventyComputed:
     title: "{{post.title}}"
 ---
 
-<h1>{{post.title}}</h1>
-{{post.content | markdown | safe}}
+<article class="article">
+  <h1 class="h1 gradient-text">{{post.title}}</h1>
+
+  <div class="article__infos">
+    <time>{{post.date_created | parseDateToFrench}}</time>
+    <a href="/categories/{{post.category.slug}}/" data-category="{{post.category.id}}">{{post.category.name}}</a>
+  </div>
+  <div class="markdown">
+    {{post.content | markdown | safe}}
+  </div>
+  {{post.tags[0].tags_id | log}}
+</article>
 
 <a href="/">Retour à l'accueil</a>

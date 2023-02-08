@@ -19,3 +19,11 @@ clip: rect(0, 0, 0, 0);
 white-space: nowrap;
 border-width: 0;
 }
+
+.gradient-text{
+  background: -webkit-linear-gradient(360deg, #FA97A1, #9780E5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
