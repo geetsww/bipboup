@@ -15,6 +15,22 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    
+    <meta name="description" content="{{description}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="{% if image|length %}{{site.cms + "/assets/" + image}}{%else%}{{site.url}}/share.png{%endif%}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{site.url}}/{{page.url}}">
+    <meta property="twitter:title" content="{{title}}">
+    <meta property="twitter:description" content="{{description}}">
+    <meta property="twitter:image" content="{% if image|length %}{{site.cms + "/assets/" +  image}}{%else%}{{site.url}}/share.png{%endif%}">
 </head>
 <body>
      {% include "components/header/header.njk" %}

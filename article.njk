@@ -7,8 +7,9 @@ pagination:
 permalink: "articles/{{ post.slug }}/"
 eleventyComputed:
     title: "{{post.title}}"
+    description: "{{post.description}}"
+    image: "{{post.thumbnail}}"
 ---
-
 <article class="article">
   <h1 class="h1 gradient-text">{{post.title}}</h1>
 
