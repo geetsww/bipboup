@@ -11,6 +11,8 @@
   display: inline-block;
   border-radius: 3px;
   padding: 0 2px;
+  font-family: "Open Sans";
+  vertical-align: bottom;
 }
 .markdown a:hover::after{
   left:0;
