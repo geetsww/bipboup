@@ -1,0 +1,25 @@
+---
+layout: layouts/main.njk
+pagination:
+    data: tags
+    size: 1
+    alias: tag
+permalink: "tags/{{ tag.slug }}/"
+eleventyComputed:
+    title: "{{tag.title}}"
+    description: "Tous les articles sur {{tag.title}} sur bipboup.dev"
+---
+
+{%- from "components/article-link/article-link.njk" import article -%}
+
+<h1 style="text-align:center;" class="gradient-text h1">{{tag.title}}</h1>
+
+
+
+{% for post in posts%}
+  {%for tags in post.tags%}
+    {% if tags.tags_id.id == tag.id %}
+      {{article(post)}}
+    {%endif%}
+  {%endfor%}
+{%endfor%} 

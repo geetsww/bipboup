@@ -12,5 +12,26 @@ article .article__infos{
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap:32px;
+}
+.article .markdown{
+  margin-bottom: 3rem;
+}
+.article__tags{
+  display: flex;
+  padding-top: 1rem;
+  gap: 1rem;
+  max-width: 640px;
+  border-top: 2px solid black;
+  margin: 1rem auto;
+}
+.article__tag{
+  padding: 5px 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.article__tag:hover{
+  background: black;
+  color:white;
 }
