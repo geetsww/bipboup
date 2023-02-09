@@ -10,6 +10,7 @@
 
 @import "./pages/article.css";
 @import "./pages/404.css";
+@import "./pages/page.css";
 
 /* Components */
 
@@ -17,3 +18,4 @@
 @import "../../_includes/components/spotlight/spotlight.css";
 @import "../../_includes/components/article-link/article-link.css";
 @import "../../_includes/components/footer/footer.css";
+@import "../../_includes/components/pagination/pagination.css";

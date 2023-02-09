@@ -1,0 +1,47 @@
+.to-pagination{
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+}
+.to-pagination a{
+  outline: 2px solid black;
+  outline-offset: 10px;
+  transition: outline-offset 300ms;
+}
+.to-pagination a:hover{
+  outline-offset: 20px;
+}
+.pagination{
+  margin: 4rem auto;
+}
+.pagination ol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap:1rem;
+}
+
+.pagination ol > *{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 300ms;
+}
+.pagination ol > *:hover{
+  outline: 2px solid black;
+  background: var(--gray);
+}
+
+.pagination .current{
+  outline: 2px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

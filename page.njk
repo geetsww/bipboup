@@ -1,0 +1,17 @@
+---
+layout: layouts/main.njk
+permalink: pages/{{pagination.pageNumber + 1}}/
+pagination:
+  data: posts
+  size: 6
+eleventyComputed:
+  title: Page {{pagination.pageNumber + 1}}
+---
+{%- from "components/article-link/article-link.njk" import article -%}
+{%- from "components/pagination/pagination.njk" import paginationDisplay -%}
+
+
+{%- for post in pagination.items %}
+   {{article(post)}}
+{% endfor -%}
+{{paginationDisplay(pagination, page)}}
