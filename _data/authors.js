@@ -11,6 +11,5 @@ module.exports = async () =>{
     })
 
     const data = (await req.json()).data
-    console.log(data[0])
     return  data
 }
