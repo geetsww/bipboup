@@ -4,6 +4,7 @@ permalink: pages/{{pagination.pageNumber + 1}}/
 pagination:
   data: posts
   size: 6
+  addAllPagesToCollections: true
 eleventyComputed:
   title: Page {{pagination.pageNumber + 1}}
 ---
