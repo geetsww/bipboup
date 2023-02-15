@@ -42,7 +42,7 @@
 .markdown strong{
   font-weight: 600;
 }
-.markdown p{
+.markdown p, .markdown li{
     font-size: 1rem;
     line-height: 140%;
     font-family: "Open Sans";
