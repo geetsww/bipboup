@@ -1,0 +1,19 @@
+---
+layout: layouts/main.njk
+pagination:
+    data: authors
+    size: 1
+    alias: author
+permalink: "auteurs/{{ author.slug }}/"
+eleventyComputed:
+    title: "{{author.first_name}} {{author.last_name}}"
+    description: "Tous les articles de {{author.name}} sur bipboup.dev"
+---
+
+{%- from "components/article-link/article-link.njk" import article -%}
+
+<h1 style="text-align:center;" class="gradient-text h1">{{author.first_name}} {{author.last_name}}</h1>
+
+{% for post in author.posts%}
+      {{article(post)}}
+{%endfor%} 

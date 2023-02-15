@@ -18,13 +18,14 @@ article .article__infos{
 .article .markdown{
   margin-bottom: 3rem;
 }
-.article__tags{
+article .article__tags{
   display: flex;
   padding-top: 1rem;
   gap: 1rem;
   max-width: 640px;
   border-top: 2px solid black;
   margin: 1rem auto;
+  margin-top: 1rem;
 }
 .article__tag{
   padding: 5px 1rem;
@@ -34,4 +35,19 @@ article .article__infos{
 .article__tag:hover{
   background: black;
   color:white;
+}
+.article__author{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  background: var(--gray-light);
+  padding: 1rem;
+}
+.article__author a{
+  text-decoration: underline;
+}
+.article__author figure{
+  width: 75px;
+  border-radius: 10px;
+  overflow: hidden;
 }
