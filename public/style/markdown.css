@@ -84,6 +84,13 @@
 .markdown .token.operator{
   background: none;
 }
+.markdown pre{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 1rem 0;
+  background: var(--gray-light);
+  padding: .5rem;
+}
 
 @media (max-width:800px) {
   .markdown h1{
